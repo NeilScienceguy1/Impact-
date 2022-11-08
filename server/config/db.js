@@ -5,7 +5,7 @@ const db = process.env.MONGO_URI;
 const connectDB = async () => {
 	try {
 		await mongoose.connect(
-			"mongodb+srv://Neil:Neil%401234@impact.64nojpm.mongodb.net/?retryWrites=true&w=majority",
+			"",
 			{
 				useNewUrlParser: true,
 				useUnifiedTopology: true,
