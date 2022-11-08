@@ -30,7 +30,7 @@ const Sidebar = (props) => {
         return tags.map((tag) => {
             return (
                 <li>
-                    <a href="#" style={{color:`${tag.color}`}} onClick={() => props.setTodoState(tag._id)}>#{tag.name}</a>
+                    <a href="#" style={{ color: `${tag.color}` }} onClick={() => { props.setTodoState(tag._id);}}>#{tag.name}</a>
                 </li>
             )
         })
@@ -43,7 +43,7 @@ const Sidebar = (props) => {
             </div>
             <ul className="nav-links">
                 <li>
-                    <a href="#">
+                    <a href="/">
                         <i className="bx bx-home"></i>
                         <span className="link_name">Home</span>
                     </a>
@@ -56,7 +56,7 @@ const Sidebar = (props) => {
                     </ul>
                 </li>
                 <li>
-                    <a href="#" onClick={() => {props.setTodoState("all")}}>
+                    <a href="#" onClick={() => {props.setTodoState("all");}}>
                         <i className="bx bxs-envelope"></i>
                         <span className="link_name">Inbox</span>
                     </a>
@@ -69,7 +69,7 @@ const Sidebar = (props) => {
                     </ul>
                 </li>
                 <li>
-                    <a href="#" onClick={() => props.setTodoState("today")}>
+                    <a href="#" onClick={() => { props.setTodoState("today");}}>
                         <i className="bx bx-calendar"></i>
                         <span className="link_name">Today</span>
                     </a>
@@ -83,7 +83,7 @@ const Sidebar = (props) => {
                 </li>
                 <li className={showDrop ? "showMenu" : ""}>
                     <div className="iocn-link" onClick={() => setShowDrop(!showDrop)}>
-                        <a href="#" className="arrow">
+                        <a href="/app" className="arrow">
                             <i class='bx bx-purchase-tag-alt'></i>
                             <span className="link_name">Tags</span>
                         </a>
